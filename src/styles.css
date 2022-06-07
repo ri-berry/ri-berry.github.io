@@ -1,2 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css"; /* Import bootstrap styles */
+
+.white-text {
+    color: white;
+}
+
+.bg-header-footer {
+    background-color: #00171F;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover, a.nav-link:hover {
+    color: #00A8E8;
+}
