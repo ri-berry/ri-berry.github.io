@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css"; /* Import bootstrap styles */
 
-.white-text {
-    color: white;
+body {
+    background-color: #00171F;
 }
 
-.bg-header-footer {
-    background-color: #00171F;
+.white-text {
+    color: white;
 }
 
 a:visited {
