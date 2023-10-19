@@ -7,8 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProjectsModule } from './projects/projects.module';
 
 @NgModule({
   declarations: [
@@ -17,12 +17,12 @@ import { ContactComponent } from './components/contact/contact.component';
     FooterComponent,
     HomeComponent,
     NotFoundComponent,
-    ProjectsComponent,
     ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

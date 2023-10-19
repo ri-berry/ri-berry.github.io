@@ -1,0 +1,12 @@
+<h1>Coding Projects</h1>
+
+<div *ngIf="projects.length == 0">
+  <h3>No Projects to Display.</h3>
+</div>
+<div *ngIf="projects.length > 0">
+  <ul>
+    <li *ngFor="let project of projects">
+      <app-project-summary></app-project-summary>
+    </li>
+  </ul>
+</div>

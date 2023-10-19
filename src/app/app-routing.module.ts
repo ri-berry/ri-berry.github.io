@@ -4,11 +4,10 @@ import { NotFoundError } from 'rxjs';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import { ProjectsComponent } from './components/projects/projects.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'projects', component: ProjectsComponent},
+  {path: 'projects', loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)},
   {path: 'contact', component: ContactComponent},
   {path: '**', component: NotFoundComponent},
 
