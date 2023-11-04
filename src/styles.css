@@ -1,18 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"; /* Import bootstrap styles */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
-body {
-    background-color: #00171F;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.white-text {
-    color: white;
-}
-
-a:visited {
-    color: lightblue;
-}
-
-a:hover, a.nav-link:hover {
-    color: #00A8E8;
-}

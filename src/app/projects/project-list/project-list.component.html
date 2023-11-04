@@ -3,10 +3,9 @@
 <div *ngIf="projects.length == 0">
   <h3>No Projects to Display.</h3>
 </div>
-<div *ngIf="projects.length > 0">
-  <ul>
-    <li *ngFor="let project of projects">
-      <app-project-summary></app-project-summary>
-    </li>
-  </ul>
-</div>
+  <mat-grid-list cols="3" *ngIf="projects.length > 0">
+    <mat-grid-tile *ngFor="let project of projects" >
+      <app-project-summary [project]="project"></app-project-summary>
+    </mat-grid-tile>
+
+</mat-grid-list>
